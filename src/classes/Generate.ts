@@ -1,7 +1,7 @@
 /*
- * @Author: yiliang 
- * @Date: 2019-01-16 16:00:52 
- * @Last Modified by: mrjzhang
+ * @Author: yiliang
+ * @Date: 2019-01-16 16:00:52
+ * @Last Modified by: yiliang114
  * @Last Modified time: 2019-08-06 09:55:50
  */
 import Vuex from 'vuex'
