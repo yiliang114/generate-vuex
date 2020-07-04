@@ -1,14 +1,9 @@
-import DummyClass from "../src/generate-vuex"
+import { setFuncName } from "../src/ts-generate-vuex"
 
-/**
- * Dummy test
- */
-describe("Dummy test", () => {
-  it("works if true is truthy", () => {
-    expect(true).toBeTruthy()
-  })
-
-  it("DummyClass is instantiable", () => {
-    expect(new DummyClass()).toBeInstanceOf(DummyClass)
+describe("GenerateVuex test", () => {
+  [['test', 'setTest'], ['Test', 'setTest']].forEach(([input, output], index) => {
+    it("setFuncName" + index, () => {
+      expect(setFuncName(input)).toBe(output)
+    })
   })
 })
