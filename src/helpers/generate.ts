@@ -1,4 +1,4 @@
-import { GenerateType, State, Getters, Mutations, MutationValue } from '../types'
+import { GenerateType, State, Getters, Mutations, MutationValue } from '../temp/types'
 
 /**
  * @param {*} key
