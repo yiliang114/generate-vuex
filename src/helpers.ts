@@ -1,6 +1,6 @@
 /*
- * @Author: yiliang 
- * @Date: 2018-12-19 15:10:50 
+ * @Author: yiliang
+ * @Date: 2018-12-19 15:10:50
  * @Last Modified by: yiliang
  * @Last Modified time: 2019-01-16 16:00:14
  * vuex 的表单处理的一种方案： https://vuex.vuejs.org/zh/guide/forms.html
@@ -12,7 +12,7 @@ import vuex from './helpers/vuex'
 
 export const mapStateSync = (namespace, states) => {
 
-  // 先获取到所有（传参的）states 
+  // 先获取到所有（传参的）states
   const get = mapState(namespace, states)
   // get 的 key 就是 stateName 本身
   const stateKeys = getStateKeys(get)
@@ -73,7 +73,7 @@ export const _get = (path, props) => {
   // 校验 path 中是否携带特殊的字符
   const special = ['@state', '@actions', '@mutations', '@getters']
   if (path.includes('*')) {
-    // todo: 
+    // todo:
     // 处理 path ，截取 '/'
     const namespace = 'test'
     // 子模块的 state 可以直接从 this.$store.state.xxx 中获取， 而 getters 就需要拼接字符串来获取了，直接扩展到了一个对象中
@@ -102,8 +102,8 @@ export const _get = (path, props) => {
 
 /**
  * 从 store 中获取 raw module
- * @param {*} namespace 
- * @param {*} store 
+ * @param {*} namespace
+ * @param {*} store
  */
 function getRawModule(namespace, store) {
   if (!namespace) {
@@ -137,7 +137,7 @@ function getRawModule(namespace, store) {
  * 比如第二个参数值为 xxx.yyy.cc， 则表示实际的值为 ['xxx'], 但是自动经过 computed 进行处理，传出所需要的的子属性 yyy 的属性 cc 值
  * todo:
  * 先暂时只处理 shortCuts 是数组的情况
- * @param {*} namespace 
+ * @param {*} namespace
  * @param {*} shortCuts
  */
 export const stateHelper = (namespace, shortCuts) => {
@@ -167,8 +167,8 @@ export const stateHelper = (namespace, shortCuts) => {
 
 /**
  * 只需要获取某个 namespace 中的键 数组就行了。。。后面还是交给 vuex helpers func
- * @param {*} namespace 
- * @param {*} shortCuts 
+ * @param {*} namespace
+ * @param {*} shortCuts
  *  注意： 箭头函数的 this 不会被绑定，定义处的 this 指向什么值就是什么值，严格模式下全局函数中的 this 值就是 undefined
  *        而且对于箭头函数来说， bind call apply 的使用对箭头函数只起到传参数的作用，不会改变 this 的值
  */
@@ -210,8 +210,8 @@ export function generateHelper(namespace, shortCuts) {
 
 /**
  * get 是对 generateHelper 和 mapFunc 的封装
- * @param {*} namespace 
- * @param {*} shortCuts 
+ * @param {*} namespace
+ * @param {*} shortCuts
  */
 export function get(namespace, shortCuts) {
   console.log('get', this)
