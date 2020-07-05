@@ -40,6 +40,5 @@ jobs:
 
       - name: test, build
         run: |
-          ln -sf "$NODE_PATH" ./node_modules
           npm run test
           npm run build
