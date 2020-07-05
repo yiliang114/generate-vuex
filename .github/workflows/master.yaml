@@ -34,17 +34,14 @@ jobs:
           node-version: 12
           registry-url: https://registry.npmjs.org
 
-      - name: Install yarn
-        run: npm install -g yarn
-
       - name: Install project dependencies
         if: steps.yarn-cache.outputs.cache-hit != 'true' # Over here!
-        run: yarn install --production=false
+        run: npm install
 
       - name: test, build
         run: |
-          yarn test
-          yarn build
+          npm run test
+          npm run build
 
       - name: Publish to NPM
         run: |
