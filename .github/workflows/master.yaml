@@ -48,7 +48,7 @@ jobs:
       - name: test, build
         run: |
           yarn test
-          yarn run build
+          yarn build
 
   publish:
     runs-on: ubuntu-latest
