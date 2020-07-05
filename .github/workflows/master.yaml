@@ -45,7 +45,7 @@ jobs:
 
       - name: Publish to NPM
         run: |
-          npm config set //registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN
+          npm config set //registry.npmjs.org/:_authToken=$TOKEN
           npm publish
         env:
           CI: true
