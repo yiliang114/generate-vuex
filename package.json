@@ -1,6 +1,6 @@
 {
   "name": "ts-generate-vuex",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "keywords": [],
   "main": "dist/ts-generate-vuex.umd.js",
