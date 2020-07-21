@@ -1,4 +1,4 @@
-name: auth publish
+name: master action
 
 on:
   push:
