@@ -36,6 +36,11 @@ jobs:
           npm run test
           npm run build
 
+      - run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          NPM_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
+
       - name: Publish to NPM
         run: |
           npm config set //registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN
