@@ -4,9 +4,11 @@
 
 Generate-Vuex maybe can use as a plugin which makes you feel better when you use vuex. You need not to write simple mutation functions any more if you use it.
 
-### 使用
+### Use
 
-在 vuex 的任意一个子 module 中使用, 将自动生成 mutations 和 getters, 不用再重复写它了~
+You can use generate-vuex in vuex child module, it can generate mutations and getters which you used to write repeatedly.
+
+在 vuex 的任意一个子 module 中使用, 将自动生成 mutations 和 getters
 
 ```js
 import { setFuncName, generateGetters, generateMutations } from 'generate-vuex'
