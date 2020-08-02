@@ -1,8 +1,13 @@
 {
-  "name": "ts-generate-vuex",
-  "version": "0.0.5",
-  "description": "",
-  "keywords": [],
+  "name": "generate-vuex",
+  "version": "0.1.0",
+  "description": "generate mutations and getters of vuex for vue developers",
+  "keywords": [
+    "vue",
+    "vuex",
+    "mutations",
+    "getters"
+  ],
   "main": "dist/ts-generate-vuex.umd.js",
   "module": "dist/ts-generate-vuex.es5.js",
   "typings": "dist/types/ts-generate-vuex.d.ts",
