@@ -33,8 +33,3 @@ jobs:
         run: |
           npm run test
           npm run build
-
-      - name: Generate Auto Changelog
-        uses: ahmadawais/action-auto-changelog@master
-        with:
-          github_token: ${{ secrets.TOKEN }}

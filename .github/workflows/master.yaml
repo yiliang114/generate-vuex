@@ -34,6 +34,12 @@ jobs:
           npm run test
           npm run build
 
+      # 这玩意有 bug, 只能将 changelog 合并到 master 分支上
+      - name: Generate Auto Changelog
+        uses: ahmadawais/action-auto-changelog@master
+        with:
+          github_token: ${{ secrets.TOKEN }}
+
       - run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
