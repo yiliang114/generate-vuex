@@ -11,8 +11,9 @@ export function generateAction(
     const result = await func(params)
     const { commit } = context
     if (result) {
-      commit(setFuncName(stateName))
+      commit(setFuncName(stateName), result)
     }
+    return result
   }
 }
 
