@@ -10,3 +10,9 @@ export type MutationValue = Record<string, any> | string | undefined | number | 
 export interface Mutations {
   [property: string]: (state: State, value: MutationValue) => void
 }
+
+export interface VbxOptions {
+  data?: Object
+  methods?: Object
+  computed?: Object
+}
