@@ -16,3 +16,8 @@ export interface VbxOptions {
   methods?: Object
   computed?: Object
 }
+
+export interface ActionOptions {
+  func: Function
+  stateName: string
+}
