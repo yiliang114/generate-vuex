@@ -909,11 +909,20 @@ img { max-width: 100%; }
 </header>
 <nav class="tsd-navigation secondary">
 	<ul>
+		<li class=" tsd-kind-class">
+			<a href="classes/vbx.html" class="tsd-kind-icon">Vbx</a>
+		</li>
+		<li class=" tsd-kind-interface">
+			<a href="interfaces/actionoptions.html" class="tsd-kind-icon">Action<wbr>Options</a>
+		</li>
 		<li class=" tsd-kind-interface">
 			<a href="interfaces/getters.html" class="tsd-kind-icon">Getters</a>
 		</li>
 		<li class=" tsd-kind-interface">
 			<a href="interfaces/mutations.html" class="tsd-kind-icon">Mutations</a>
+		</li>
+		<li class=" tsd-kind-interface">
+			<a href="interfaces/vbxoptions.html" class="tsd-kind-icon">Vbx<wbr>Options</a>
 		</li>
 		<li class=" tsd-kind-type-alias tsd-has-type-parameter">
 			<a href="globals.html#generatetype" class="tsd-kind-icon">Generate<wbr>Type</a>
@@ -924,11 +933,23 @@ img { max-width: 100%; }
 		<li class=" tsd-kind-type-alias">
 			<a href="globals.html#state" class="tsd-kind-icon">State</a>
 		</li>
+		<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-not-exported">
+			<a href="globals.html#extend" class="tsd-kind-icon">extend</a>
+		</li>
+		<li class=" tsd-kind-function">
+			<a href="globals.html#generateaction" class="tsd-kind-icon">generate<wbr>Action</a>
+		</li>
+		<li class=" tsd-kind-function">
+			<a href="globals.html#generateactions" class="tsd-kind-icon">generate<wbr>Actions</a>
+		</li>
 		<li class=" tsd-kind-function">
 			<a href="globals.html#generategetters" class="tsd-kind-icon">generate<wbr>Getters</a>
 		</li>
 		<li class=" tsd-kind-function">
 			<a href="globals.html#generatemutations" class="tsd-kind-icon">generate<wbr>Mutations</a>
+		</li>
+		<li class=" tsd-kind-function tsd-is-not-exported">
+			<a href="globals.html#isobject" class="tsd-kind-icon">is<wbr>Object</a>
 		</li>
 		<li class=" tsd-kind-function">
 			<a href="globals.html#setfuncname" class="tsd-kind-icon">set<wbr>Func<wbr>Name</a>
@@ -976,10 +997,18 @@ img { max-width: 100%; }
 			<section class="tsd-panel tsd-index-panel">
 				<div class="tsd-index-content">
 					<section class="tsd-index-section ">
+						<h3>Classes</h3>
+						<ul class="tsd-index-list">
+							<li class="tsd-kind-class"><a href="classes/vbx.html" class="tsd-kind-icon">Vbx</a></li>
+						</ul>
+					</section>
+					<section class="tsd-index-section ">
 						<h3>Interfaces</h3>
 						<ul class="tsd-index-list">
+							<li class="tsd-kind-interface"><a href="interfaces/actionoptions.html" class="tsd-kind-icon">Action<wbr>Options</a></li>
 							<li class="tsd-kind-interface"><a href="interfaces/getters.html" class="tsd-kind-icon">Getters</a></li>
 							<li class="tsd-kind-interface"><a href="interfaces/mutations.html" class="tsd-kind-icon">Mutations</a></li>
+							<li class="tsd-kind-interface"><a href="interfaces/vbxoptions.html" class="tsd-kind-icon">Vbx<wbr>Options</a></li>
 						</ul>
 					</section>
 					<section class="tsd-index-section ">
@@ -993,8 +1022,12 @@ img { max-width: 100%; }
 					<section class="tsd-index-section ">
 						<h3>Functions</h3>
 						<ul class="tsd-index-list">
+							<li class="tsd-kind-function tsd-has-type-parameter tsd-is-not-exported"><a href="globals.html#extend" class="tsd-kind-icon">extend</a></li>
+							<li class="tsd-kind-function"><a href="globals.html#generateaction" class="tsd-kind-icon">generate<wbr>Action</a></li>
+							<li class="tsd-kind-function"><a href="globals.html#generateactions" class="tsd-kind-icon">generate<wbr>Actions</a></li>
 							<li class="tsd-kind-function"><a href="globals.html#generategetters" class="tsd-kind-icon">generate<wbr>Getters</a></li>
 							<li class="tsd-kind-function"><a href="globals.html#generatemutations" class="tsd-kind-icon">generate<wbr>Mutations</a></li>
+							<li class="tsd-kind-function tsd-is-not-exported"><a href="globals.html#isobject" class="tsd-kind-icon">is<wbr>Object</a></li>
 							<li class="tsd-kind-function"><a href="globals.html#setfuncname" class="tsd-kind-icon">set<wbr>Func<wbr>Name</a></li>
 						</ul>
 					</section>
@@ -1009,7 +1042,7 @@ img { max-width: 100%; }
 				<div class="tsd-signature tsd-kind-icon">Generate<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/yiliang114/generate-vuex/blob/31164a6/src/types.ts#L2">types.ts:2</a></li>
+						<li>Defined in <a href="https://github.com/yiliang114/generate-vuex/blob/2222878/src/types.ts#L2">types.ts:2</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
@@ -1040,7 +1073,7 @@ img { max-width: 100%; }
 				<div class="tsd-signature tsd-kind-icon">Mutation<wbr>Value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/yiliang114/generate-vuex/blob/31164a6/src/types.ts#L8">types.ts:8</a></li>
+						<li>Defined in <a href="https://github.com/yiliang114/generate-vuex/blob/2222878/src/types.ts#L8">types.ts:8</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -1050,13 +1083,103 @@ img { max-width: 100%; }
 				<div class="tsd-signature tsd-kind-icon">State<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/yiliang114/generate-vuex/blob/31164a6/src/types.ts#L1">types.ts:1</a></li>
+						<li>Defined in <a href="https://github.com/yiliang114/generate-vuex/blob/2222878/src/types.ts#L1">types.ts:1</a></li>
 					</ul>
 				</aside>
 			</section>
 		</section>
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Functions</h2>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter tsd-is-not-exported">
+				<a name="extend" class="tsd-anchor"></a>
+				<h3>extend</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter tsd-is-not-exported">
+					<li class="tsd-signature tsd-kind-icon">extend&lt;T, U&gt;<span class="tsd-signature-symbol">(</span>to<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, from<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">U</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/yiliang114/generate-vuex/blob/2222878/src/helpers/utils.ts#L4">helpers/utils.ts:4</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>T</h4>
+							</li>
+							<li>
+								<h4>U</h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>to: <span class="tsd-signature-type">T</span></h5>
+							</li>
+							<li>
+								<h5>from: <span class="tsd-signature-type">U</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span>
+							<span class="tsd-signature-symbol"> &amp; </span>
+							<span class="tsd-signature-type">U</span>
+						</h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function">
+				<a name="generateaction" class="tsd-anchor"></a>
+				<h3>generate<wbr>Action</h3>
+				<ul class="tsd-signatures tsd-kind-function">
+					<li class="tsd-signature tsd-kind-icon">generate<wbr>Action<span class="tsd-signature-symbol">(</span>generateActionOptions<span class="tsd-signature-symbol">: </span><a href="interfaces/actionoptions.html" class="tsd-signature-type">ActionOptions</a>, state<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/yiliang114/generate-vuex/blob/2222878/src/helpers/action.ts#L5">helpers/action.ts:5</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>generateActionOptions: <a href="interfaces/actionoptions.html" class="tsd-signature-type">ActionOptions</a></h5>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> state: <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Function</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function">
+				<a name="generateactions" class="tsd-anchor"></a>
+				<h3>generate<wbr>Actions</h3>
+				<ul class="tsd-signatures tsd-kind-function">
+					<li class="tsd-signature tsd-kind-icon">generate<wbr>Actions<span class="tsd-signature-symbol">(</span>optionsArray<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/actionoptions.html" class="tsd-signature-type">ActionOptions</a><span class="tsd-signature-symbol">&gt;</span>, state<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/yiliang114/generate-vuex/blob/2222878/src/helpers/action.ts#L20">helpers/action.ts:20</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>optionsArray: <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/actionoptions.html" class="tsd-signature-type">ActionOptions</a><span class="tsd-signature-symbol">&gt;</span></h5>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> state: <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function">
 				<a name="generategetters" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagConst">Const</span> generate<wbr>Getters</h3>
@@ -1067,7 +1190,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/yiliang114/generate-vuex/blob/31164a6/src/helpers/generate.ts#L14">helpers/generate.ts:14</a></li>
+								<li>Defined in <a href="https://github.com/yiliang114/generate-vuex/blob/2222878/src/helpers/generate.ts#L14">helpers/generate.ts:14</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1090,7 +1213,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/yiliang114/generate-vuex/blob/31164a6/src/helpers/generate.ts#L24">helpers/generate.ts:24</a></li>
+								<li>Defined in <a href="https://github.com/yiliang114/generate-vuex/blob/2222878/src/helpers/generate.ts#L24">helpers/generate.ts:24</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1100,6 +1223,29 @@ img { max-width: 100%; }
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <a href="interfaces/mutations.html" class="tsd-signature-type">Mutations</a></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-is-not-exported">
+				<a name="isobject" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Object</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-is-not-exported">
+					<li class="tsd-signature tsd-kind-icon">is<wbr>Object<span class="tsd-signature-symbol">(</span>val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/yiliang114/generate-vuex/blob/2222878/src/helpers/utils.ts#L1">helpers/utils.ts:1</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>val: <span class="tsd-signature-type">any</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 					</li>
 				</ul>
 			</section>
@@ -1113,7 +1259,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/yiliang114/generate-vuex/blob/31164a6/src/helpers/generate.ts#L6">helpers/generate.ts:6</a></li>
+								<li>Defined in <a href="https://github.com/yiliang114/generate-vuex/blob/2222878/src/helpers/generate.ts#L6">helpers/generate.ts:6</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
